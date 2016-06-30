@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96A82334280A4C2CBB7EDCF6 /* libPods-Open-MeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3BDE501DA541E8A349FFEB /* libPods-Open-MeTests.a */; };
+		AF17989F1D255DF600E2BCBC /* FISCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF17989E1D255DF600E2BCBC /* FISCalculator.m */; };
 		BD8995311BCD4E1A00663058 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD8995301BCD4E1A00663058 /* Launch Screen.storyboard */; };
 		D8663B4618C6528F00B37118 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8663B4518C6528F00B37118 /* Foundation.framework */; };
 		D8663B4818C6528F00B37118 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8663B4718C6528F00B37118 /* CoreGraphics.framework */; };
@@ -37,6 +38,8 @@
 /* Begin PBXFileReference section */
 		4D3BDE501DA541E8A349FFEB /* libPods-Open-MeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Open-MeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		747C0F8327C5DC8CA3A68502 /* Pods-Open-MeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Open-MeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Open-MeTests/Pods-Open-MeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AF17989D1D255DF600E2BCBC /* FISCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FISCalculator.h; path = ../FISCalculator.h; sourceTree = "<group>"; };
+		AF17989E1D255DF600E2BCBC /* FISCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FISCalculator.m; path = ../FISCalculator.m; sourceTree = "<group>"; };
 		BD8995301BCD4E1A00663058 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D3E344FE3AB14CA9E7840956 /* Pods-Open-MeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Open-MeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Open-MeTests/Pods-Open-MeTests.release.xcconfig"; sourceTree = "<group>"; };
 		D8663B4218C6528F00B37118 /* Open-Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Open-Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,6 +131,8 @@
 		D8663B4B18C6528F00B37118 /* Open-Me */ = {
 			isa = PBXGroup;
 			children = (
+				AF17989D1D255DF600E2BCBC /* FISCalculator.h */,
+				AF17989E1D255DF600E2BCBC /* FISCalculator.m */,
 				D8663B5418C6528F00B37118 /* FISAppDelegate.h */,
 				D8663B5518C6528F00B37118 /* FISAppDelegate.m */,
 				D8663B5718C6528F00B37118 /* Main.storyboard */,
@@ -320,6 +325,7 @@
 			files = (
 				D8663B5C18C6528F00B37118 /* FISViewController.m in Sources */,
 				D8663B5218C6528F00B37118 /* main.m in Sources */,
+				AF17989F1D255DF600E2BCBC /* FISCalculator.m in Sources */,
 				D8663B5618C6528F00B37118 /* FISAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

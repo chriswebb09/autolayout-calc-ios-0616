@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FISCalculator.h"
 
 @interface FISViewController : UIViewController
+
+@property (strong, nonatomic) FISCalculator *newCalculation;
 
 @end
