@@ -48,64 +48,63 @@
 }
 
 
+-(void)updateViews:(NSString *)input {
+    NSArray *operationsArray = @[@"/", @"*", @"*", @"+", @"-"];
+    if ([operationsArray containsObject:input]) {
+        [self.newCalculation.operation addObject:input];
+    }
+    [self.newCalculation.input addObject:input];
+    self.textField.text = self.calcInput;
+}
+
 - (IBAction)oneButtonTapped:(id)sender {
     self.calcInput = @"1";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)twoButtonTapped:(id)sender {
     self.calcInput = @"2";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)threeButtonTapped:(id)sender {
     self.calcInput = @"3";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)fourButtonTapped:(id)sender {
     self.calcInput = @"4";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)fiveButtonTapped:(id)sender {
     self.calcInput = @"5";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)sixButtonTapped:(id)sender {
     self.calcInput = @"6";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)sevenButtonTapped:(id)sender {
     self.calcInput = @"7";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)eightButtonTapped:(id)sender {
     self.calcInput = @"8";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)nineButtonTapped:(id)sender {
     self.calcInput = @"9";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)zeroButtonTapped:(id)sender {
     self.calcInput = @"0";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)pointButtonTapped:(id)sender {
@@ -113,32 +112,27 @@
 
 - (IBAction)divideButtonTapped:(id)sender {
     self.calcInput = @"/";
-    [self.newCalculation.operation addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)multiplyButtonTapped:(id)sender {
     self.calcInput = @"*";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)subtractButtonTapped:(id)sender {
     self.calcInput = @"-";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)addButtonTapped:(id)sender {
     self.calcInput = @"+";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 - (IBAction)equalsButtonTapped:(id)sender {
     self.calcInput = @"=";
-    [self.newCalculation.input addObject:self.calcInput];
-    self.textField.text = self.calcInput;
+    [self updateViews:self.calcInput];
 }
 
 
